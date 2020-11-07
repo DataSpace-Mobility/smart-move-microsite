@@ -1,0 +1,1215 @@
+/* #Detail {
+  position: absolute;
+  width: 1366px;
+  height: 7409px;
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  --web-view-name: Detail;
+  --web-view-id: Detail;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}
+#Rectangle_37 {
+  fill: rgba(86, 79, 79, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rectangle_37 {
+  position: absolute;
+  overflow: visible;
+  width: 1366px;
+  height: 450px;
+  left: 0px;
+  top: 6960px;
+}
+#Rectangle_1 {
+  fill: rgba(86, 79, 79, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rectangle_1 {
+  position: absolute;
+  overflow: visible;
+  width: 1366px;
+  height: 87px;
+  left: 0px;
+  top: 0px;
+}
+#Challenge {
+  left: 63px;
+  top: 32px;
+  position: absolute;
+  overflow: visible;
+  width: 90px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#Rectangle_2 {
+  fill: rgba(86, 79, 79, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rectangle_2 {
+  position: absolute;
+  overflow: visible;
+  width: 1366px;
+  height: 848px;
+  left: 0px;
+  top: 765px;
+}
+#WHAT_ARE_WE_LOOKING_FOR {
+  left: 297px;
+  top: 1652px;
+  position: absolute;
+  overflow: visible;
+  width: 813px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  color: rgba(244, 199, 91, 1);
+}
+#Details {
+  left: 238px;
+  top: 32px;
+  position: absolute;
+  overflow: visible;
+  width: 62px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#Participation {
+  left: 385px;
+  top: 32px;
+  position: absolute;
+  overflow: visible;
+  width: 114px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#Timeline {
+  left: 585px;
+  top: 32px;
+  position: absolute;
+  overflow: visible;
+  width: 79px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#News_and_Updates {
+  left: 749px;
+  top: 32px;
+  position: absolute;
+  overflow: visible;
+  width: 168px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#Organizers {
+  left: 1002px;
+  top: 32px;
+  position: absolute;
+  overflow: visible;
+  width: 98px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#FAQs {
+  left: 1185px;
+  top: 32px;
+  position: absolute;
+  overflow: visible;
+  width: 47px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+#Details_of_Data_Challenge {
+  left: 277px;
+  top: 837px;
+  position: absolute;
+  overflow: visible;
+  width: 813px;
+  height: 82px;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  color: rgba(244, 199, 91, 1);
+  text-transform: uppercase;
+}
+#The_aim_of_the_data_challenge_ {
+  left: 234px;
+  top: 1002px;
+  position: absolute;
+  overflow: visible;
+  width: 899px;
+  height: 503px;
+  line-height: 38px;
+  margin-top: -6.5px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 1);
+}
+#Rectangle_5 {
+  fill: rgba(86, 79, 79, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rectangle_5 {
+  position: absolute;
+  overflow: visible;
+  width: 1366px;
+  height: 848px;
+  left: 0px;
+  top: 2379px;
+}
+#DATA_CHALLENGE_STATEMENT {
+  left: 277px;
+  top: 2452px;
+  position: absolute;
+  overflow: visible;
+  width: 813px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  color: rgba(244, 199, 91, 1);
+}
+#There_are_three_data_challenge {
+  left: 196px;
+  top: 2609px;
+  position: absolute;
+  overflow: visible;
+  width: 1017px;
+  height: 112px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 1);
+}
+#_How_to_generate_insights_and_ {
+  left: 196px;
+  top: 2721px;
+  position: absolute;
+  overflow: visible;
+  width: 976px;
+  height: 459px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 1);
+}
+#Rectangle_11 {
+  fill: rgba(86, 79, 79, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rectangle_11 {
+  position: absolute;
+  overflow: visible;
+  width: 1366px;
+  height: 1243px;
+  left: 0px;
+  top: 5035px;
+}
+#HOW_TO_PARTICIPATE {
+  left: 277px;
+  top: 5096px;
+  position: absolute;
+  overflow: visible;
+  width: 813px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  color: rgba(244, 199, 91, 1);
+}
+#SMTHero2x {
+  position: absolute;
+  width: 1266px;
+  height: 678px;
+  left: 50px;
+  top: 87px;
+  overflow: visible;
+}
+#Rectangle_20 {
+  fill: rgba(244, 199, 91, 1);
+}
+.Rectangle_20 {
+  position: absolute;
+  overflow: visible;
+  width: 1366px;
+  height: 396px;
+  left: 0px;
+  top: 3228px;
+}
+#OBJECTIVE_THAT_YOUR_SOLUTIONS_ {
+  left: 190px;
+  top: 3265px;
+  position: absolute;
+  overflow: visible;
+  width: 912px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43px;
+  color: rgba(62, 62, 63, 1);
+}
+#Aim12x {
+  position: absolute;
+  width: 68px;
+  height: 67px;
+  left: 52px;
+  top: 3371px;
+  overflow: visible;
+}
+#Covid_19_Recovery {
+  left: 52px;
+  top: 3474px;
+  position: absolute;
+  overflow: visible;
+  width: 127px;
+  height: 72px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(62, 62, 63, 1);
+}
+#Multi-modal_integration_Passen {
+  left: 226px;
+  top: 3474px;
+  position: absolute;
+  overflow: visible;
+  width: 276px;
+  height: 72px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(62, 62, 63, 1);
+}
+#Gender_and_Safety {
+  left: 549px;
+  top: 3475px;
+  position: absolute;
+  overflow: visible;
+  width: 128px;
+  height: 72px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(62, 62, 63, 1);
+}
+#Promote_usage_of_sustainable_t {
+  left: 716px;
+  top: 3474px;
+  position: absolute;
+  overflow: visible;
+  width: 180px;
+  height: 108px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(62, 62, 63, 1);
+}
+#Line_19 {
+  fill: transparent;
+  stroke: rgba(62, 62, 63, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_19 {
+  overflow: visible;
+  position: absolute;
+  width: 6px;
+  height: 251.02px;
+  left: 191.5px;
+  top: 3334.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Aim22x {
+  position: absolute;
+  width: 263px;
+  height: 60px;
+  left: 226px;
+  top: 3371px;
+  overflow: visible;
+}
+#Line_20 {
+  fill: transparent;
+  stroke: rgba(62, 62, 63, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_20 {
+  overflow: visible;
+  position: absolute;
+  width: 6px;
+  height: 251.02px;
+  left: 522.5px;
+  top: 3336.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Line_21 {
+  fill: transparent;
+  stroke: rgba(62, 62, 63, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_21 {
+  overflow: visible;
+  position: absolute;
+  width: 6px;
+  height: 251.02px;
+  left: 689.5px;
+  top: 3336.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Aim32x {
+  position: absolute;
+  width: 111px;
+  height: 50px;
+  left: 549px;
+  top: 3371px;
+  overflow: visible;
+}
+#Aim42x {
+  position: absolute;
+  width: 89px;
+  height: 55px;
+  left: 716px;
+  top: 3371px;
+  overflow: visible;
+}
+#We_are_looking_for_solutions_t {
+  left: 175px;
+  top: 1770px;
+  position: absolute;
+  overflow: visible;
+  width: 1017px;
+  height: 112px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgba(62, 62, 63, 1);
+}
+#_How_can_different_mobility_da {
+  left: 175px;
+  top: 1869px;
+  position: absolute;
+  overflow: hidden;
+  width: 997px;
+  height: 459px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgba(62, 62, 63, 1);
+}
+#Inclusivity_and_overall_effici {
+  left: 943px;
+  top: 3468px;
+  position: absolute;
+  overflow: visible;
+  width: 180px;
+  height: 108px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(62, 62, 63, 1);
+}
+#Cost_efficient_solutions {
+  left: 1162px;
+  top: 3468px;
+  position: absolute;
+  overflow: visible;
+  width: 180px;
+  height: 72px;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(62, 62, 63, 1);
+}
+#Line_22 {
+  fill: transparent;
+  stroke: rgba(62, 62, 63, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_22 {
+  overflow: visible;
+  position: absolute;
+  width: 6px;
+  height: 251.02px;
+  left: 916.5px;
+  top: 3336.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Line_23 {
+  fill: transparent;
+  stroke: rgba(62, 62, 63, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_23 {
+  overflow: visible;
+  position: absolute;
+  width: 6px;
+  height: 251.02px;
+  left: 1135.5px;
+  top: 3331.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Aim62x {
+  position: absolute;
+  width: 69px;
+  height: 60px;
+  left: 1164px;
+  top: 3371px;
+  overflow: visible;
+}
+#Aim52x {
+  position: absolute;
+  width: 118px;
+  height: 60px;
+  left: 943px;
+  top: 3371px;
+  overflow: visible;
+}
+#WHO_CAN_PARTICIPATE {
+  left: 256px;
+  top: 3710px;
+  position: absolute;
+  overflow: visible;
+  width: 813px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  color: rgba(62, 62, 63, 1);
+}
+#If_you_are_a_student_with_any_ {
+  left: 175px;
+  top: 3867px;
+  position: absolute;
+  overflow: visible;
+  width: 1017px;
+  height: 112px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgba(62, 62, 63, 1);
+}
+#_The_Challenge_is_open_to_Stud {
+  left: 175px;
+  top: 4057px;
+  position: absolute;
+  overflow: visible;
+  width: 976px;
+  height: 897px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  color: rgba(62, 62, 63, 1);
+}
+#Teams_must_have_no_more_than_f {
+  left: 228px;
+  top: 5226px;
+  position: absolute;
+  overflow: visible;
+  width: 912px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  color: rgba(255, 255, 255, 1);
+}
+#Image_1 {
+  position: absolute;
+  width: 301px;
+  height: 240px;
+  left: 127px;
+  top: 5498px;
+  overflow: visible;
+}
+#Image_2 {
+  position: absolute;
+  width: 301px;
+  height: 240px;
+  left: 533px;
+  top: 5498px;
+  overflow: visible;
+}
+#Image_3 {
+  position: absolute;
+  width: 301px;
+  height: 240px;
+  left: 939px;
+  top: 5498px;
+  overflow: visible;
+}
+#Concept_Stage {
+  left: 127px;
+  top: 5775px;
+  position: absolute;
+  overflow: visible;
+  width: 302px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 1);
+}
+#City_Matchmaking_Stage {
+  left: 533px;
+  top: 5775px;
+  position: absolute;
+  overflow: visible;
+  width: 302px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 1);
+}
+#Final_Submission {
+  left: 939px;
+  top: 5774px;
+  position: absolute;
+  overflow: visible;
+  width: 302px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 1);
+}
+#At_the_Concept_Stage_each_team {
+  left: 127px;
+  top: 5855px;
+  position: absolute;
+  overflow: visible;
+  width: 314px;
+  height: 292px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+#The_shortlisted_concept_note_s {
+  left: 533px;
+  top: 5855px;
+  position: absolute;
+  overflow: visible;
+  width: 314px;
+  height: 347px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+#Subsequent_to_the_matchmaking_ {
+  left: 939px;
+  top: 5853px;
+  position: absolute;
+  overflow: visible;
+  width: 314px;
+  height: 377px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+#PARTICIPATE {
+  left: 277px;
+  top: 6370px;
+  position: absolute;
+  overflow: visible;
+  width: 813px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  color: rgba(244, 199, 91, 1);
+}
+#Group_1 {
+  position: absolute;
+  width: 531px;
+  height: 259px;
+  left: 418px;
+  top: 6586px;
+  overflow: visible;
+}
+#Be_a_part_of_changing_the_land {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 532px;
+  height: 152px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  color: rgba(62, 62, 63, 1);
+}
+#Rectangle_35 {
+  fill: rgba(220, 67, 81, 1);
+  stroke: rgba(112, 112, 112, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Rectangle_35 {
+  position: absolute;
+  overflow: visible;
+  width: 314px;
+  height: 74px;
+  left: 109px;
+  top: 185px;
+}
+#Register {
+  left: 180px;
+  top: 203px;
+  position: absolute;
+  overflow: visible;
+  width: 164px;
+  height: 39px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 29px;
+  color: rgba(255, 255, 255, 1);
+}
+#Group_8 {
+  position: absolute;
+  width: 1219.798px;
+  height: 252px;
+  left: 73px;
+  top: 7058.5px;
+  overflow: visible;
+}
+#If_you_need_immediate_assistan {
+  left: 0px;
+  top: 38.5px;
+  position: absolute;
+  overflow: visible;
+  width: 395px;
+  height: 175px;
+  line-height: 48px;
+  margin-top: -16.5px;
+  text-align: left;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 1);
+}
+#Line_18 {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_18 {
+  overflow: visible;
+  position: absolute;
+  width: 6px;
+  height: 251.02px;
+  left: 441.5px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#facebook {
+  fill: rgba(255, 255, 255, 1);
+}
+.facebook {
+  overflow: visible;
+  position: absolute;
+  width: 23.646px;
+  height: 50.88px;
+  left: 507px;
+  top: 78.62px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Connect_on_Social {
+  left: 494px;
+  top: 0.5px;
+  position: absolute;
+  overflow: visible;
+  width: 297px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43px;
+  color: rgba(255, 255, 255, 1);
+}
+#twitter {
+  fill: rgba(255, 255, 255, 1);
+}
+.twitter {
+  overflow: visible;
+  position: absolute;
+  width: 56.839px;
+  height: 50.881px;
+  left: 589.388px;
+  top: 78.62px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#linkedin {
+  fill: rgba(255, 255, 255, 1);
+}
+.linkedin {
+  overflow: visible;
+  position: absolute;
+  width: 48.776px;
+  height: 51.112px;
+  left: 694.646px;
+  top: 78.389px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Line_28 {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1px;
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  shape-rendering: auto;
+}
+.Line_28 {
+  overflow: visible;
+  position: absolute;
+  width: 6px;
+  height: 251.02px;
+  left: 832.5px;
+  top: 1px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#dataspace_logo {
+  position: absolute;
+  width: 316.799px;
+  height: 55.422px;
+  left: 903px;
+  top: 67.5px;
+  overflow: visible;
+}
+#Group_2 {
+  position: absolute;
+  width: 149.508px;
+  height: 43.363px;
+  left: 0px;
+  top: 7.457px;
+  overflow: visible;
+}
+#Path_1 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_1 {
+  overflow: visible;
+  position: absolute;
+  width: 15.442px;
+  height: 33.38px;
+  left: 0px;
+  top: 0.312px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_2 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_2 {
+  overflow: visible;
+  position: absolute;
+  width: 14.584px;
+  height: 24.099px;
+  left: 18.952px;
+  top: 9.827px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_3 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_3 {
+  overflow: visible;
+  position: absolute;
+  width: 10.061px;
+  height: 31.041px;
+  left: 34.628px;
+  top: 2.729px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_4 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_4 {
+  overflow: visible;
+  position: absolute;
+  width: 14.584px;
+  height: 24.099px;
+  left: 45.859px;
+  top: 9.827px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_5 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_5 {
+  overflow: visible;
+  position: absolute;
+  width: 16.378px;
+  height: 34.004px;
+  left: 63.25px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_6 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_6 {
+  overflow: visible;
+  position: absolute;
+  width: 14.194px;
+  height: 33.692px;
+  left: 82.826px;
+  top: 9.671px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_7 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_7 {
+  overflow: visible;
+  position: absolute;
+  width: 14.584px;
+  height: 24.099px;
+  left: 100.374px;
+  top: 9.827px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_8 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_8 {
+  overflow: visible;
+  position: absolute;
+  width: 14.272px;
+  height: 24.333px;
+  left: 118.624px;
+  top: 9.593px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_9 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_9 {
+  overflow: visible;
+  position: absolute;
+  width: 14.272px;
+  height: 24.333px;
+  left: 135.236px;
+  top: 9.593px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Group_3 {
+  position: absolute;
+  width: 123.225px;
+  height: 39.463px;
+  left: 193.573px;
+  top: 8.783px;
+  overflow: visible;
+}
+#Path_10 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_10 {
+  overflow: visible;
+  position: absolute;
+  width: 22.383px;
+  height: 32.288px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_11 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_11 {
+  overflow: visible;
+  position: absolute;
+  width: 14.506px;
+  height: 25.035px;
+  left: 27.531px;
+  top: 7.799px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_12 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_12 {
+  overflow: visible;
+  position: absolute;
+  width: 14.194px;
+  height: 32.678px;
+  left: 47.029px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_13 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_13 {
+  overflow: visible;
+  position: absolute;
+  width: 3.276px;
+  height: 32.21px;
+  left: 66.604px;
+  top: 0.078px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_14 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_14 {
+  overflow: visible;
+  position: absolute;
+  width: 7.253px;
+  height: 32.288px;
+  left: 75.651px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_15 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_15 {
+  overflow: visible;
+  position: absolute;
+  width: 3.276px;
+  height: 32.21px;
+  left: 86.882px;
+  top: 0.078px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_16 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_16 {
+  overflow: visible;
+  position: absolute;
+  width: 10.919px;
+  height: 30.806px;
+  left: 94.135px;
+  top: 1.56px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Path_17 {
+  fill: rgba(65, 34, 142, 1);
+}
+.Path_17 {
+  overflow: visible;
+  position: absolute;
+  width: 15.91px;
+  height: 31.43px;
+  left: 107.315px;
+  top: 8.033px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Group_7 {
+  position: absolute;
+  width: 28.778px;
+  height: 55.422px;
+  left: 154.89px;
+  top: 0px;
+  overflow: visible;
+}
+#Group_4 {
+  position: absolute;
+  width: 3.275px;
+  height: 3.636px;
+  left: 25.503px;
+  top: 0px;
+  overflow: visible;
+}
+#Path_18 {
+  fill: rgba(249, 157, 46, 1);
+}
+.Path_18 {
+  overflow: visible;
+  position: absolute;
+  width: 3.275px;
+  height: 3.636px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Group_5 {
+  position: absolute;
+  width: 23.085px;
+  height: 44.035px;
+  left: 2.808px;
+  top: 5.693px;
+  overflow: visible;
+}
+#Path_19 {
+  fill: rgba(249, 157, 46, 1);
+}
+.Path_19 {
+  overflow: visible;
+  position: absolute;
+  width: 23.084px;
+  height: 44.035px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+#Group_6 {
+  position: absolute;
+  width: 3.275px;
+  height: 3.636px;
+  left: 0px;
+  top: 51.786px;
+  overflow: visible;
+}
+#Path_20 {
+  fill: rgba(249, 157, 46, 1);
+}
+.Path_20 {
+  overflow: visible;
+  position: absolute;
+  width: 3.275px;
+  height: 3.636px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+} */
