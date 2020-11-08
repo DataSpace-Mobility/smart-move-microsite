@@ -4,9 +4,10 @@
   align-items: center;
   color: red;
   flex-direction: column;
-  height: 20vh;
-  width: 90%;
-  margin-top: 5vh;
+  /* height: 20vh; */
+  /* width: 90%; */
+  margin-top: 20px;
+  text-align: center;
 }
 
 .header > h1 {

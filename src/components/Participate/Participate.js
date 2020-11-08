@@ -5,9 +5,10 @@ import "./Participate.css";
 const Participate = () => {
   return (
     <section className="participate">
-      <h1>Participate</h1>
+      <h1>Participate in the challenge</h1>
       <div className="participate__details">
         <div className="participate__left">
+          <h1>JOIN US A CITY PARTNER</h1>
           <p className="participatePara">
             Partner as a City to get benefited from the challenge.<br></br>Click the
             button below to know more.
@@ -16,8 +17,9 @@ const Participate = () => {
             Learn More
           </button>
         </div>
-        <div style={{ borderLeft: "1px solid #FFFFFF", height: "90%" }}></div>
+        <div style={{ borderLeft: "1px solid #FFFFFF", height: "70%" }}></div>
         <div className="participate__right">
+          <h1>COMPETE IN THE CHALLENGE</h1>
           <p className="participatePara">
             Be a part of changing the landscape of urban mobility in India.<br></br>Fill
             out the form to compete in the challenge.

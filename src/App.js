@@ -4,8 +4,8 @@ import Login from "./components/Login/Login";
 import CityInvitation from "./components/CityInvitation/CityInvitation";
 import './App.css'
 import Challenge from "./Pages/Challenge/Challenge";
-import Details from "./Pages/Details/Details";
 import Participation from './Pages/Participation/Participation';
+import Details from "./Pages/Details/Details";
 
 
 function App() {
@@ -18,6 +18,10 @@ function App() {
         <Route path="/city-participation" exact component={Participation} />
         <Route path="/admin" component={Login} />
         <Route path="/invitation" component={CityInvitation} />
+        <Route path="/timeline" component={Participation} />
+        <Route path="/news" component={Participation} />
+        <Route path="/organizers" component={Participation} /> 
+        <Route path="/faqs" component={Participation} /> 
         {/* <Route path="/test" exact component={challenge} /> */}
       </Switch>
       {/* <Footer /> */}

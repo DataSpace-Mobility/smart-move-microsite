@@ -1,22 +1,32 @@
 import { Button, makeStyles } from "@material-ui/core";
 import React from "react";
-import "./ThankYou.css";
 
 const useStyles = makeStyles({
   root: {
-    // boxSizing: "border-box",
-    // border: "1px solid black",
-    // width: "50%",
-    // padding: "30px",
-    // marginTop: "20px",
-    // height: "60vh",
     width:"90%",
-    boxSizing: "border-box",
-    border: "1px solid black",
     padding: "30px",
     margin: "20px",
-    height: "max-content",
+    // height: "max-content",
+    color: "#3e3e3f",
+    textAlign:"center"
   },
+  thankmsg:{
+    marginTop:"20px",
+    marginBottom:"20px"
+  },
+  button: {
+    backgroundColor: "#DC4351",
+    padding: "5px",
+    borderRadius: "30px",
+    color: "whitesmoke",
+    fontSize: "24px",
+    border: "1px solid #DC4351",
+    outline: "none",
+    cursor: "pointer",
+    width: "370px",
+    marginTop: "20px",
+    maxWidth:"80%"
+  }
 });
 
 const ThankYou = (props) => {
@@ -24,7 +34,7 @@ const ThankYou = (props) => {
   return (
     <div className={classes.root}>
       <h1>Thank You for becoming a city partner</h1>
-      <div className="city_details">
+      <div className={classes.thankmsg}>
         <p>
           We have received your entry. Please share your data with us through
           our secure data sharing platform linked below.
@@ -38,6 +48,7 @@ const ThankYou = (props) => {
           variant="contained"
           color="primary"
           href="/"
+          className={classes.button}
         >
           Upload data on a secure platform
         </Button>

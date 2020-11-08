@@ -9,12 +9,29 @@ const useStyles = makeStyles({
     width: "90%",
     padding: "30px",
     margin: "20px",
-    height: "70vh",
+    // height: "70vh",
+    color: "#3e3e3f",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   },
-  head:{
-    fontFamily:"'Roboto', sans-serif",
-    fontSize:"24px",
-  }
+  head: {
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: "24px",
+  },
+  button: {
+    backgroundColor: "#DC4351",
+    padding: "5px",
+    borderRadius: "30px",
+    color: "whitesmoke",
+    fontSize: "24px",
+    border: "1px solid #DC4351",
+    outline: "none",
+    cursor: "pointer",
+    width: "200px",
+    marginTop: "20px",
+  },
 });
 
 const Preview = (props) => {
@@ -80,7 +97,7 @@ const Preview = (props) => {
           </tr>
         </tbody>
       </table>
-      <h2>List of DataSets</h2>
+      <h2 style={{ textAlign: "center" }}>List of DataSets</h2>
       <table>
         <tbody>
           {sectorList?.length
@@ -103,17 +120,7 @@ const Preview = (props) => {
         variant="contained"
         color="primary"
         onClick={addCityData}
-        style={{
-          backgroundColor: "#DC4351",
-          padding: "5px",
-          borderRadius: "30px",
-          color: "whitesmoke",
-          fontSize: "24px",
-          border: "1px solid #DC4351",
-          outline: "none",
-          cursor: "pointer",
-          width: "200px",
-        }}
+        className={classes.button}
       >
         Submit
       </Button>

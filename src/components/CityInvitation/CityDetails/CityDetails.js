@@ -223,27 +223,6 @@ const subSectorDescList = {
   "Others":"Please check this if you are not sure about your dataset type"
 };
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "90%",
-    marginTop: "2vh",
-    height: "100%",
-  },
-  root1: {
-    margin: "2vh",
-    flexGrow: 1,
-  },
-  card: {
-    border: "1px solid gray",
-    padding: "5px",
-    margin: "5px",
-  },
-  head: {
-    fontFamily: "'Roboto', sans-serif",
-    fontSize: "24px",
-    marginBottom: "5px",
-  },
-}));
 
 const initialState = {
   "Air Quality": false,
@@ -301,6 +280,30 @@ const initialState = {
   "Anonymized registered vehicles": false,
   "Freight Terminals": false,
 };
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "90%",
+    marginTop: "2vh",
+    height: "100%",
+    color: '#3e3e3f',
+  },
+  root1: {
+    margin: "2vh",
+    flexGrow: 1,
+  },
+  card: {
+    border: "1px solid gray",
+    padding: "5px",
+    margin: "5px",
+  },
+  head: {
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: "24px",
+    marginBottom: "5px",
+  },
+}));
+
 const CityData = (props) => {
   const history = useHistory();
   const classes = useStyles();
@@ -372,7 +375,7 @@ const CityData = (props) => {
         <Grid container spacing={3}>
           {sectorList.map((sector, id) => (
             <Grid key={id} item xs={4}>
-              <div style={{ backgroundColor: "lightgrey" }}>
+              <div style={{ backgroundColor: "lightgray" }}>
                 <button
                   onClick={handleDialog}
                   className={cityData[sector]?.length ? "buttonSelected": "button"}
