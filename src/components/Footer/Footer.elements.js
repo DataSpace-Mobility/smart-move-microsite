@@ -36,6 +36,7 @@ export const HorizontalLine = styled.div`
  
 export const ConnectUs = styled.div`
 color: #3e3e3f;
+margin-right:20px;
 `;
 
 export const ConnectUsHeading = styled.h1``;
