@@ -353,7 +353,6 @@ const CityData = (props) => {
       console.log("alert");
       alert("Please select atleast one dataset");
     } else {
-      console.log("push");
       history.push({ pathname: "/invitation/preview", personData, cityData });
     }
   };

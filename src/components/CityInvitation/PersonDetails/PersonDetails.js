@@ -94,8 +94,8 @@ console.log(error);
           variant="outlined"
           value={input.city}
           onChange={handleInput}
-          error={error.city}
-          helperText={errorText.city}
+          // error={error.city}
+          // helperText={errorText.city}
         />
         <TextField
           id="outlined-basic"
@@ -104,8 +104,8 @@ console.log(error);
           name="poc"
           value={input.poc}
           onChange={handleInput}
-          error={error.poc}
-          helperText={errorText.poc}
+          // error={error.poc}
+          // helperText={errorText.poc}
         />
         <TextField
           id="outlined-basic"
@@ -114,8 +114,8 @@ console.log(error);
           name="email"
           value={input.email}
           onChange={handleInput}
-          error={error.email}
-          helperText={errorText.email}
+          // error={error.email}
+          // helperText={errorText.email}
         />
         <TextField
           id="outlined-basic"
@@ -124,8 +124,8 @@ console.log(error);
           name="phone"
           value={input.phone}
           onChange={handleInput}
-          error={error.phone}
-          helperText={errorText.phone}
+          // error={error.phone}
+          // helperText={errorText.phone}
         />
         <Button
           size="large"

@@ -1,8 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 // import Svg1 from "../SvgImages/SvgImage";
 import "./Participate.css";
 
 const Participate = () => {
+
+  const history = useHistory();
+  const learnHandler = () =>{
+    history.push('/city-participation')
+  }
   return (
     <section className="participate">
       <h1>Participate in the challenge</h1>
@@ -13,7 +19,7 @@ const Participate = () => {
             Partner as a City to get benefited from the challenge.<br></br>Click the
             button below to know more.
           </p>
-          <button className="participateButton" tabIndex="-1">
+          <button className="participateButton" tabIndex="-1" onClick={learnHandler}>
             Learn More
           </button>
         </div>
