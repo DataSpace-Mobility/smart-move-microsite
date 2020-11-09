@@ -2,8 +2,8 @@ import styled from "styled-components";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import UrbanImage from "../../images/challenge/GUMP1.png";
-import DataSpaceImage from "../../images/challenge/dataspace_logo.svg";
+// import UrbanImage from "../../images/challenge/GUMP1.png";
+// import DataSpaceImage from "../../images/challenge/dataspace_logo.svg";
 
 export const FooterContainer = styled.div`
   background-color: #fff;
@@ -43,12 +43,17 @@ export const ConnectUsHeading = styled.h1``;
 
 
 export const UrbanLogo = styled.img`
+width:40%;
+margin-bottom:2%;
 `;
 
 export const DataSpaceLogo  =styled.img`
+width:60%;
 `;
 
 export const Logo = styled.div`
+display:flex;
+flex-direction:column;
 `;
 
 export const FacebkIcon = styled(FacebookIcon)`

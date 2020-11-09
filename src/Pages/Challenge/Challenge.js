@@ -5,14 +5,14 @@ import Parallax from "../../components/parallax/Parallax";
 import SmartMoveImage from "../../images/challenge/smartmove.png";
 // import SmartMove1 from "../../images/SmarMove1.png";
 import Participate from "../../components/Participate/Participate";
-import Objective from "../../components/Objective/Objective";
+// import Objective from "../../components/Objective/Objective";
 import Walkthrough from "../../components/Walkthrough/Walkthrough";
 import InfoSection from "../../components/InfoSection/InfoSection";
 import InfoImageSection from "../../components/infoImageSection/InfoImageSection";
 import InfoSmartImage from "../../images/challenge/Smart5.svg";
 import BusImage from "../../images/challenge/Group 250.svg";
 import CycleImage from "../../images/challenge/Group 257.svg";
-import CarImage from "../../images/challenge/Group 225.svg";
+import CarImage from "../../images/challenge/Group 266.svg";
 import Benefits from "../../components/Benefits/Benefits";
 import walk1 from "../../images/challenge/Walk1.svg";
 import timeline from "../../images/challenge/Timeline.svg";
@@ -35,15 +35,13 @@ const Challenge = () => {
           Challenge, a global urban mobility challenge to address mobility
           challenges faced by Indian cities."
       />
-      {/*   */}
       <InfoImageSection
-        heading="WHAT IS SMART MOVE?"
+        heading="SMART-MOVE: INNOVATIVE URBAN MOBILITY CHALLENGE"
         lightbg={true}
         imgStart={true}
         image={InfoSmartImage}
-        para1="SMART MOVE is an Innovative Urban Mobility Challenge being organized to propose solutions to address physical and digital mobility challenges faced by Indian cities."
-        para2="The challenge proposes to develop solutions around the Government of India’s various flagship programmes to help cities transform into a digitally empowered society. "
-        para3="TThe initiative invites students and researchers from national and international universities and institutes to participate and help strengthen the existing phy-gital movements."
+        para1="SMART MOVE is a global urban mobility challenge to address complex mobility issues faced by cities across India. We encourage you to develop innovative technology for mobility management, development of data-driven digital products to improve the way we commute, or proposals that would act as an incentives to promote sustainable mobility."
+        para2="Let's build on the efforts of the Ministry of Housing and Urban Affairs and Smart Cities Mission with support from GIZ and National Institute of Urban Affairs."
       />
       <InfoImageSection
         heading="THEMES OF THE CHALLENGE"
@@ -52,10 +50,7 @@ const Challenge = () => {
         imgStart={true}
         paraheading="Restoring Public Transport Ridership"
         parasubheading="COVID-19 recovery | Cost-effective solutions"
-        para1="Developing COVID-19 recovery models that focus on the skewed mobility
-         preferences and absence of safe mobility in the post-pandemic cities, 
-         either through technology-based ideas or innovative mobility plans for cost-effective solutions.
-        The purpose is to use the available mobility datasets and understand commuter travel patterns to restore public transport operations. One must keep the demand management, fleet augmentation, data-driven, responsive approach, digitalization, real-time information etc. in mind."
+        para1="Focus on the skewed mobility preferences and absence of safe mobility in the cities post-pandemic. Develop cost-effective COVID-19 recovery mobility-models either through technology-based ideas or physical innovations. Use existing mobility datasets to understand commuter’s travel patterns and restore public transport operations with an approach better than the existing. Devise a data-driven, responsive approach to manage demand, fleet, real-time information etc."
         style={{ marginTop: "-80px" }}
       />
       <InfoImageSection
@@ -64,7 +59,7 @@ const Challenge = () => {
         imgStart={false}
         paraheading="Achieving Sustainable Transport and Resilience"
         parasubheading="Multi-modal Integration | Sustainable transport modes"
-        para1="Ideas that give special attention to the distribution of street space for different users. It should further follow a thorough plan for promoting multi-modal integration and sustainable modes of transport - including Non-Motorised Transport (NMT), pedestrians, cyclists and other formal and informal para-transit modes. The proposal should give considerable importance to data interoperability and design approaches for each selected mode based on available and attainable datasets."
+        para1="Ideas to equitize the distribution of street space for different users and promote multi-modal integration and sustainable modes of transport - including Non-Motorized Transport (NMT), pedestrians, cyclists and other formal and informal para-transit modes. The proposal should give considerable importance to data interoperability and design approaches for each selected mode based on available and attainable datasets."
       />
       <InfoImageSection
         image={CarImage}

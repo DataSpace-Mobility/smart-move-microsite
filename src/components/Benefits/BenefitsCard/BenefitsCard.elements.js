@@ -10,7 +10,7 @@ export const CardContainer = styled.div`
   box-shadow: 6px 6px 6px #00000029;
   border: ${({ lightBg }) => (lightBg ? "1px solid #69BFC3" : "1px solid #dc4351")}; ;
   border-radius: 30px;
-  padding:30px;
+  padding:30px 30px 30px 45px;
 `;
 
 export const CardLine = styled.div`
@@ -23,8 +23,10 @@ export const CardLine = styled.div`
 export const CardHeading = styled.h2`
 color: #FFFFFF;
 margin-bottom:5px;
+width:90%;
 `;
 
 export const CardPara = styled.p`
 color: #FFFFFF;
+width:90%;
 `;

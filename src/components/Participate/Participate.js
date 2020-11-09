@@ -27,8 +27,7 @@ const Participate = () => {
         <div className="participate__right">
           <h1>COMPETE IN THE CHALLENGE</h1>
           <p className="participatePara">
-            Be a part of changing the landscape of urban mobility in India.<br></br>Fill
-            out the form to compete in the challenge.
+            Be a part of changing the landscape of urban mobility in India.<br></br>Register now to compete.
           </p>
           <button className="participateButton" tabIndex="-1">
             Register

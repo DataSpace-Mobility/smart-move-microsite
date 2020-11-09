@@ -3,7 +3,7 @@ import { ParallaxImage } from "./Parallax.elements";
 
 const Parallax = (props) => {
   return (
-      <ParallaxImage src={props.src} />
+      <ParallaxImage src={props.src} style={props.style}/>
   );
 };
 

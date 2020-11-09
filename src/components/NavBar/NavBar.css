@@ -1,8 +1,8 @@
 .navbar {
-  background: #3e3e3f;
+  background: black;
   height: 70px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   /* position: sticky; */
@@ -10,13 +10,29 @@
   z-index: 999;
   width: 100vw;
   color: whitesmoke;
+
+  
 }
 
-.navbar>a{
+.navbar > a {
   text-decoration: none;
   color: white;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  
+}
+.navbar > a:hover {
+  text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+
+  .navbar > a {
+  font-size: 0.8em;
+}
+}
 /* .navbar__items{
     display: flex;
 }
@@ -29,4 +45,3 @@
   color: whitesmoke;
   justify-content: space-between;
 } */
-

@@ -14,7 +14,7 @@ const Benefits = () => {
         <BenefitsCard
           lightBg={true}
           heading="Setup of National Open Mobility Data Portal"
-          para="This initiative will help establish mutual trust in terms of data sharing and develop data related guidelines between the public and private sector."
+          para="Inculcate the culture of open data in urban mobility. This will help establish mutual trust in terms of data sharing and develop data related guidelines."
         />
         <BenefitsCard
           lightBg={true}
@@ -22,7 +22,7 @@ const Benefits = () => {
           para="The challenge will devise innovative technology-driven solutions to help cities in offering a safe, sustainable, efficient and smart urban transport systems."
         />
         <BenefitsCard
-          heading="Unlocking Mobility Datasets"
+          heading="Increase Accessability to Mobility Datasets"
           para="The initiative will help improve the accessibility and mobility of people and goods by unlocking the potential of urban mobility data sets."
         />
       </Cards>
