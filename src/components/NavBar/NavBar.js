@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       {/* <div className="navbar__items"> */}
-        <Link to="/">Home</Link>
+        <a href="https://smartmove.niua.org">Home</a>
         <Link to="/guidelines">Guidelines</Link>
         {/* <Link to="/city-participation">Participation</Link>
         <Link to="/timeline">Timeline</Link> */}
