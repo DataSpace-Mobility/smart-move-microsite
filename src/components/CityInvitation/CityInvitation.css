@@ -1,0 +1,9 @@
+.city__invitation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+    background-color: whitesmoke;
+    text-align: start !important;
+}
