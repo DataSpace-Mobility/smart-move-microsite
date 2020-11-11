@@ -1,31 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import Grid from "@material-ui/core/Grid";
+import { Button, ButtonGroup } from "@material-ui/core";
+import { db } from "../../firebase";
 
-const products = [
-  { name: "Product 1", desc: "A nice thing", price: "$9.99" },
-  { name: "Product 2", desc: "Another thing", price: "$3.45" },
-  { name: "Product 3", desc: "Something else", price: "$6.51" },
-  { name: "Product 4", desc: "Best thing of all", price: "$14.11" },
-  { name: "Shipping", desc: "", price: "Free" },
-];
-const addresses = [
-  "1 Material-UI Drive",
-  "Reactville",
-  "Anytown",
-  "99999",
-  "USA",
-];
-const payments = [
-  { name: "Card type", detail: "Visa" },
-  { name: "Card holder", detail: "Mr John Smith" },
-  { name: "Card number", detail: "xxxx-xxxx-xxxx-1234" },
-  { name: "Expiry date", detail: "04/2024" },
-];
 
 const useStyles = makeStyles((theme) => ({
   listItem: {
@@ -36,50 +15,94 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     marginTop: theme.spacing(2),
+  },buttons: {
+    display: "flex",
+    justifyContent: "flex-end",
   },
+  button: {
+    marginTop: theme.spacing(3),
+    marginLeft: theme.spacing(1),
+  }
 }));
 
-export default function Review() {
+export default function Review(props) {
   const classes = useStyles();
+  const { personData, datasets } = props.data;
+  let personKeyList = [];
+  let datasetKeyList = [];
+
+  if (personData) {
+    personKeyList = Object.keys(personData);
+  }
+  if (datasets) {
+    datasetKeyList = Object.keys(datasets);
+  }
+
+  const handleSubmit = () =>{
+    db.collection("forms").add({
+      ...personData,
+      datasets
+    });
+    // next page
+    props.submit()
+  }
 
   return (
     <React.Fragment>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} style={{textAlign:"left"}}>
         <Grid item container direction="column" xs={12}>
-          <Typography variant="h6" gutterBottom className={classes.title}>
+          <Typography variant="h5" gutterBottom className={classes.title}>
             City Details
           </Typography>
           <Grid container>
-            {payments.map((payment) => (
-              <React.Fragment key={payment.name}>
+            {personKeyList.map((key) => (
+              <React.Fragment key={key}>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.name}</Typography>
+                  <Typography gutterBottom>
+                    <strong>{key}</strong>
+                  </Typography>
                 </Grid>
                 <Grid item xs={6}>
-                  <Typography gutterBottom>{payment.detail}</Typography>
+                  <Typography gutterBottom>{personData[key]}</Typography>
                 </Grid>
               </React.Fragment>
             ))}
           </Grid>
         </Grid>
-      </Grid>
-      <Typography variant="h6" gutterBottom>
-        List of DataSets
-      </Typography>
-      <List disablePadding>
-        {products.map((product) => (
-          <ListItem className={classes.listItem} key={product.name}>
-            <ListItemText primary={product.name} secondary={product.desc} />
-            <Typography variant="body2">{product.price}</Typography>
-          </ListItem>
-        ))}
-        <ListItem className={classes.listItem}>
-          <ListItemText primary="Total" />
-          <Typography variant="subtitle1" className={classes.total}>
-            $34.06
+        <Grid item container direction="column" xs={12}>
+          <Typography variant="h5" gutterBottom className={classes.title}>
+            List of DataSets
           </Typography>
-        </ListItem>
-      </List>
+          <Grid container>
+            {datasetKeyList.map((key) => (
+              <React.Fragment key={key}>
+                <Grid item xs={6}>
+                  <Typography gutterBottom>
+                    <strong>{key}</strong>
+                  </Typography>
+                </Grid>
+                <Grid item xs={6}>
+                  {datasets[key]?.map((sector) => (
+                    <Typography gutterBottom>{sector}</Typography>
+                  ))}
+                </Grid>
+              </React.Fragment>
+            ))}
+          </Grid>
+        </Grid>
+        <Grid item xs={12} className={classes.buttons}>
+          <ButtonGroup>
+            <Button
+              onClick={props.back}
+            >
+              Back
+            </Button>
+            <Button variant="contained" color="primary" onClick={handleSubmit}>
+              Submit
+            </Button>
+          </ButtonGroup>
+        </Grid>
+      </Grid>
     </React.Fragment>
   );
 }

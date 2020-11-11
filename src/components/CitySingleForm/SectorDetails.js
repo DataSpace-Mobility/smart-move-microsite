@@ -1,10 +1,20 @@
 import React, { useState } from "react";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import TextField from "@material-ui/core/TextField";
+// import TextField from "@material-ui/core/TextField";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-import { Button, Card, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, makeStyles } from "@material-ui/core";
+import {
+  Button,
+  ButtonGroup,
+  Card,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  makeStyles,
+} from "@material-ui/core";
 
 const sectorList = [
   "Environment",
@@ -282,7 +292,7 @@ const useStyles = makeStyles((theme) => ({
     width: "90%",
     marginTop: "2vh",
     height: "100%",
-    color: '#3e3e3f',
+    color: "#3e3e3f",
   },
   root1: {
     margin: "2vh",
@@ -298,9 +308,17 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "24px",
     marginBottom: "5px",
   },
+  buttons: {
+    display: "flex",
+    justifyContent: "flex-end",
+  },
+  button: {
+    marginTop: theme.spacing(3),
+    marginLeft: theme.spacing(1),
+  },
 }));
 
-const SectorDetails= () => {
+const SectorDetails = (props) => {
   const [cityData, setCityData] = useState({});
   const [sector, setSector] = useState("");
   const [state, setState] = useState(initialState);
@@ -316,10 +334,6 @@ const SectorDetails= () => {
     setState(initialState);
     handleClose();
   };
-
-  // console.log("Check selected button :", cityData[sector]?.length);
-
-  // console.log("complete data :", cityData);
 
   const [open, setOpen] = React.useState(false);
 
@@ -338,23 +352,13 @@ const SectorDetails= () => {
     handleClickOpen();
   };
 
-  const addCityData = () => {
-    // console.log('Peson Details',personData);
-    console.log(!cityData);
-    if (!cityData) {
-      console.log("alert");
+  const handleNext = () => {
+    if (!Object.keys(cityData).length) {
       alert("Please select atleast one dataset");
     } else {
-      // history.push({ pathname: "/invitation/preview", personData, cityData });
-      alert("redirect to next page");
+      props.next({ datasets: cityData });
     }
   };
-
-  // useEffect(() => {
-  //   if (!personData) {
-  //     history.push("/invitation");
-  //   }
-  // });
 
   return (
     <React.Fragment>
@@ -377,49 +381,57 @@ const SectorDetails= () => {
             </div>
           </Grid>
         ))}
+        <Grid item xs={12} className={classes.buttons}>
+          <ButtonGroup>
+            <Button onClick={props.back}>Back</Button>
+            <Button variant="contained" color="primary" onClick={handleNext}>
+              Next
+            </Button>
+          </ButtonGroup>
+        </Grid>
       </Grid>
       <Dialog
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="form-dialog-title"
-        >
-          <DialogTitle id="form-dialog-title">Data on {sector}</DialogTitle>
-          <DialogContent>
-            <DialogContentText>
-              Do you have any of the following datasets in our city?<br></br>
-              Some example data points are listed below each category for your
-              reference.
-            </DialogContentText>
-            {sector
-              ? subSectorList[sector].map((subSector, id) => (
-                  <Card className={classes.card} key={id}>
-                    <FormControlLabel
-                      control={
-                        <Checkbox
-                          checked={state.sector}
-                          onChange={handleCheck}
-                          name={subSector}
-                          color="primary"
-                        />
-                      }
-                      label={subSector}
-                    />
-                    <p>{subSectorDescList[subSector]}</p>
-                  </Card>
-                ))
-              : null}
-          </DialogContent>
-          <DialogActions>
-            <Button onClick={handleClose} color="primary">
-              Cancel
-            </Button>
-            <Button onClick={handleSectors} color="primary">
-              Add
-            </Button>
-          </DialogActions>
-        </Dialog>
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="form-dialog-title"
+      >
+        <DialogTitle id="form-dialog-title">Data on {sector}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Do you have any of the following datasets in our city?<br></br>
+            Some example data points are listed below each category for your
+            reference.
+          </DialogContentText>
+          {sector
+            ? subSectorList[sector].map((subSector, id) => (
+                <Card className={classes.card} key={id}>
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={state.sector}
+                        onChange={handleCheck}
+                        name={subSector}
+                        color="primary"
+                      />
+                    }
+                    label={subSector}
+                  />
+                  <p>{subSectorDescList[subSector]}</p>
+                </Card>
+              ))
+            : null}
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose} color="primary">
+            Cancel
+          </Button>
+          <Button onClick={handleSectors} color="primary">
+            Add
+          </Button>
+        </DialogActions>
+      </Dialog>
     </React.Fragment>
   );
-}
+};
 
 export default SectorDetails;

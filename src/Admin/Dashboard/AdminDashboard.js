@@ -54,14 +54,14 @@ function stableSort(array, comparator) {
 
 const headCells = [
   {
-    id: "poc",
+    id: "Poc",
     numeric: false,
     disablePadding: true,
     label: "Point of Contact",
   },
-  { id: "email", numeric: true, disablePadding: false, label: "Email" },
-  { id: "city", numeric: true, disablePadding: false, label: "City" },
-  { id: "phone", numeric: true, disablePadding: false, label: "Phone" },
+  { id: "Email", numeric: true, disablePadding: false, label: "Email" },
+  { id: "City", numeric: true, disablePadding: false, label: "City" },
+  { id: "Phone", numeric: true, disablePadding: false, label: "Phone" },
   { id: "sectors", numeric: true, disablePadding: false, label: "Sector" },
 ];
 
@@ -179,7 +179,7 @@ const AdminDashboard = () => {
   const history = useHistory();
   const classes = useStyles();
   const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("email");
+  const [orderBy, setOrderBy] = React.useState("Email");
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -194,19 +194,19 @@ const AdminDashboard = () => {
 
   const handleSelectAllClick = (event) => {
     if (event.target.checked) {
-      const newSelecteds = rows.map((n) => n.poc);
+      const newSelecteds = rows.map((n) => n.Poc);
       setSelected(newSelecteds);
       return;
     }
     setSelected([]);
   };
 
-  const handleClick = (event, poc) => {
-    const selectedIndex = selected.indexOf(poc);
+  const handleClick = (event, Poc) => {
+    const selectedIndex = selected.indexOf(Poc);
     let newSelected = [];
 
     if (selectedIndex === -1) {
-      newSelected = newSelected.concat(selected, poc);
+      newSelected = newSelected.concat(selected, Poc);
     } else if (selectedIndex === 0) {
       newSelected = newSelected.concat(selected.slice(1));
     } else if (selectedIndex === selected.length - 1) {
@@ -234,7 +234,7 @@ const AdminDashboard = () => {
     setDense(event.target.checked);
   };
 
-  const isSelected = (poc) => selected.indexOf(poc) !== -1;
+  const isSelected = (Poc) => selected.indexOf(Poc) !== -1;
 
   const emptyRows =
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
@@ -254,6 +254,7 @@ const AdminDashboard = () => {
           formdata.push(snapshot.docs.map((doc) => doc.data()));
           setRows(formdata[0]);
         });
+        // console.log("data from db",formdata);
       } else {
         // user has logged out
         setUser(null);
@@ -306,7 +307,7 @@ const AdminDashboard = () => {
         )} */}
         <Tooltip title="Download">
           <IconButton aria-label="download">
-            <CSVLink data={rows} filename={"city-datasets.csv"}>
+            <CSVLink data={rows} filename={"City-datasets.csv"}>
               <CloudDownloadIcon style={{ color: "#fff" }} />
             </CSVLink>
             {/* <CSVDownload data={rows} target="_blank" /> */}
@@ -338,7 +339,7 @@ const AdminDashboard = () => {
         ) : (
           <Tooltip title="Download">
             <IconButton aria-label="download">
-              <CSVLink data={rows} filename={"city-datasets.csv"}>
+              <CSVLink data={rows} filename={"City-datasets.csv"}>
                 <CloudDownloadIcon style={{ color: "#fff" }} />
               </CSVLink>
             </IconButton>
@@ -354,7 +355,7 @@ const AdminDashboard = () => {
 
   return (
     <div className={classes.root}>
-      {rows.length ? (
+      {user ? (
         <Paper className={classes.paper}>
           {/* <DashboardHeader /> */}
           <EnhancedTableToolbar numSelected={selected.length} />
@@ -378,17 +379,22 @@ const AdminDashboard = () => {
                 {stableSort(rows, getComparator(order, orderBy))
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                   .map((row, index) => {
-                    const isItemSelected = isSelected(row.poc);
+                    const isItemSelected = isSelected(row.Poc);
                     const labelId = `enhanced-table-checkbox-${index}`;
-
+                    const sectorsList = Object.keys(row.datasets);
+                    let subsectors = sectorsList.map((sector) => {
+                      return { [sector]: row.datasets[sector].join(',') };
+                    });
+                    // let subsector = ...sectors;
+                    // console.log(...subsectors);
                     return (
                       <TableRow
                         hover
-                        onClick={(event) => handleClick(event, row.poc)}
+                        onClick={(event) => handleClick(event, row.Poc)}
                         role="checkbox"
                         aria-checked={isItemSelected}
                         tabIndex={-1}
-                        key={row.poc}
+                        key={row.Poc}
                         selected={isItemSelected}
                       >
                         <TableCell padding="checkbox">
@@ -403,13 +409,13 @@ const AdminDashboard = () => {
                           scope="row"
                           padding="none"
                         >
-                          {row.poc}
+                          {row.Poc}
                         </TableCell>
-                        <TableCell align="right">{row.email}</TableCell>
-                        <TableCell align="right">{row.city}</TableCell>
-                        <TableCell align="right">{row.phone}</TableCell>
+                        <TableCell align="right">{row.Email}</TableCell>
+                        <TableCell align="right">{row.City}</TableCell>
+                        <TableCell align="right">{row.Phone}</TableCell>
                         <TableCell align="right">
-                          {row.sectors.join(" | ")}
+                          {JSON.stringify(subsectors)}
                         </TableCell>
                       </TableRow>
                     );
@@ -450,13 +456,17 @@ const AdminDashboard = () => {
               variant="h5"
               id="tableTitle"
               component="h1"
-              style={{color:"#fff"}}
+              style={{ color: "#fff" }}
             >
               Please login
             </Typography>
             <Tooltip title="Login">
-              <IconButton aria-label="login" style={{marginLeft:"auto"}}>
-                <Button size="large" onClick={handleLogin} style={{ backgroundColor: "#fff" }}>
+              <IconButton aria-label="login" style={{ marginLeft: "auto" }}>
+                <Button
+                  size="large"
+                  onClick={handleLogin}
+                  style={{ backgroundColor: "#fff" }}
+                >
                   login
                 </Button>
               </IconButton>
@@ -466,6 +476,6 @@ const AdminDashboard = () => {
       )}
     </div>
   );
-}
+};
 
 export default AdminDashboard;

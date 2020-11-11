@@ -54,12 +54,13 @@ const Preview = (props) => {
 
     let sectors = [];
     values.map((data) => sectors.push(...data));
-
+    console.log('person data:',personData);
+    console.log('Sector data:',sectors);
     // Add data to db
-    db.collection("forms").add({
-      ...personData,
-      sectors,
-    });
+    // db.collection("forms").add({
+    //   ...personData,
+    //   sectors,
+    // });
     history.push("/thankyou");
   };
 

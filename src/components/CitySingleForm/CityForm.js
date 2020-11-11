@@ -8,11 +8,11 @@ import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
 import Button from "@material-ui/core/Button";
-import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
-import CityDetails from "./CityDetails";
+import PersonDetails from "./PersonDetails";
 import SectorDetails from "./SectorDetails";
 import Review from "./Review";
+import { useHistory } from "react-router-dom";
 
 // function Copyright() {
 //   return (
@@ -65,26 +65,38 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const steps = ["City Details", "City Data Availability", "Review your entry"];
-
-function getStepContent(step) {
-  switch (step) {
-    case 0:
-      return <CityDetails />;
-    case 1:
-      return <SectorDetails />;
-    case 2:
-      return <Review />;
-    default:
-      throw new Error("Unknown step");
-  }
-}
+const initialCityData = {
+  personData: null,
+  datasets: null,
+};
 
 const CityForm = () => {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
-  // const [cityData , setCityData] =React.useState([]);
-  // const [cityData , setCityData] =React.useState([]);
+  const [cityData, setCityData] = React.useState(initialCityData);
+  const history = useHistory();
 
+  function getStepContent(step) {
+    switch (step) {
+      case 0:
+        return <PersonDetails next={saveData} back={handleBack} />;
+      case 1:
+        return <SectorDetails next={saveData} back={handleBack} />;
+      case 2:
+        return <Review data={cityData} submit={submitData} back={handleBack} />;
+      default:
+        throw new Error("Unknown step");
+    }
+  }
+
+  const saveData = (childData) => {
+    setCityData({ ...cityData, ...childData });
+    handleNext();
+  };
+
+  const submitData = () => {
+    handleNext();
+  };
   const handleNext = () => {
     setActiveStep(activeStep + 1);
   };
@@ -92,7 +104,10 @@ const CityForm = () => {
   const handleBack = () => {
     setActiveStep(activeStep - 1);
   };
-
+  const handleUpload = () => {
+    alert("Thank You, Data has been uploaded");
+    history.push("/");
+  };
   return (
     <React.Fragment>
       <CssBaseline />
@@ -129,12 +144,14 @@ const CityForm = () => {
                   For instructions on how to upload data and your login
                   password, please check your registered email.
                 </Typography>
-                <div className={classes.buttons} 
-                    style={{justifyContent:"center"}}>
+                <div
+                  className={classes.buttons}
+                  style={{ justifyContent: "center" }}
+                >
                   <Button
                     variant="contained"
                     color="primary"
-                    onClick={handleNext}
+                    onClick={handleUpload}
                     className={classes.button}
                   >
                     Upload data on a secure platform
@@ -144,7 +161,7 @@ const CityForm = () => {
             ) : (
               <React.Fragment>
                 {getStepContent(activeStep)}
-                <div className={classes.buttons}>
+                {/* <div className={classes.buttons}>
                   {activeStep !== 0 && (
                     <Button onClick={handleBack} className={classes.button}>
                       Back
@@ -156,9 +173,9 @@ const CityForm = () => {
                     onClick={handleNext}
                     className={classes.button}
                   >
-                    {activeStep === steps.length - 1 ? "Place order" : "Next"}
+                    {activeStep === steps.length - 1 ? "Submit" : "Next"}
                   </Button>
-                </div>
+                </div> */}
               </React.Fragment>
             )}
           </React.Fragment>
